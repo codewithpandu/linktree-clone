@@ -16,7 +16,7 @@ export default function Home() {
               />
             </div>
             <div>
-              <p className="font-bold text-xl text-primary">
+              <p className="font-bold text-xl text-foreground">
                 Pandu Setia Darmawan
               </p>
             </div>
@@ -32,7 +32,7 @@ export default function Home() {
                   <a
                     target="_blank"
                     href={item.link}
-                    className="flex items-center gap-2 border p-4 hover:bg-white/50 hover:backdrop-blur-md shadow-md"
+                    className="flex items-center gap-2 border p-4 text-foreground hover:bg-white/50 hover:backdrop-blur-md shadow-md"
                   >
                     <span className="bg-white p-2 rounded-full">
                       <Icon size={24} />
