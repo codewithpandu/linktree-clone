@@ -23,7 +23,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <div className="min-h-screen w-full bg-[#f4f7fb] relative">
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              backgroundImage: `radial-gradient(circle at 1px 1px, rgba(0,29,61,0.16) 1px, transparent 0)`,
+              backgroundSize: "20px 20px",
+            }}
+          />
+          <div className="relative z-10">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }
