@@ -16,7 +16,9 @@ export default function Home() {
               />
             </div>
             <div>
-              <p className="font-bold text-xl">Pandu Setia Darmawan</p>
+              <p className="font-bold text-xl text-primary">
+                Pandu Setia Darmawan
+              </p>
             </div>
           </div>
 
